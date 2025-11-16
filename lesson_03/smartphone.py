@@ -1,5 +1,5 @@
 class Smartphone:
-    def __init__(self, marka, model, number ):
+    def __init__(self, marka, model, number):
         self.marka = marka
         self.model = model
         self.number = number
@@ -12,4 +12,3 @@ class Smartphone:
 
     def print_number(self):
         print(self.number)
-

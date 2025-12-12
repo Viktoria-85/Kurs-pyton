@@ -1,0 +1,68 @@
+Index: lesson_03/lesson_3_task_2.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from smartphone import Smartphone\r\ncatalog = [\r\n    Smartphone('<Honor>',  '<x8>', '<+895 152 3636>.'),\r\n    Smartphone('<Rusphon>', '<n42>', '<+904 154 7878>.'),\r\n    Smartphone('<Samsung>', '<A5>', '<+926 144 2525>.'),\r\n    Smartphone('<Apple>', '<iPhone 12>', '<+7911 251 6452>.'),\r\n    Smartphone('<Xiaomi>', '<Redmi Note 10>', '<+795 555 6666>.')\r\n]\r\n\r\nfor smartphone in catalog:\r\n    print(f'{smartphone.marka} - {smartphone.model}. {smartphone.number}')\r\n
+===================================================================
+diff --git a/lesson_03/lesson_3_task_2.py b/lesson_03/lesson_3_task_2.py
+--- a/lesson_03/lesson_3_task_2.py	(revision a1d2a4a63b17ef8149441fcd69e16a899bd8773e)
++++ b/lesson_03/lesson_3_task_2.py	(date 1763319934154)
+@@ -1,10 +1,10 @@
+ from smartphone import Smartphone
+ catalog = [
+-    Smartphone('<Honor>',  '<x8>', '<+895 152 3636>.'),
+-    Smartphone('<Rusphon>', '<n42>', '<+904 154 7878>.'),
+-    Smartphone('<Samsung>', '<A5>', '<+926 144 2525>.'),
+-    Smartphone('<Apple>', '<iPhone 12>', '<+7911 251 6452>.'),
+-    Smartphone('<Xiaomi>', '<Redmi Note 10>', '<+795 555 6666>.')
++    Smartphone('Honor',  'x8', '+895 152 3636.'),
++    Smartphone('Rusphon', 'n42', '+904 154 7878.'),
++    Smartphone('Samsung', 'A5', '+926 144 2525.'),
++    Smartphone('Apple', 'iPhone 12', '+7911 251 6452.'),
++    Smartphone('Xiaomi', 'Redmi Note 10', '+795 555 6666.')
+ ]
+ 
+ for smartphone in catalog:
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d7f7ca04-3908-4575-8e8d-3884f2f27774\" name=\"Changes\" comment=\"lesson3\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"lesson2\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Viktoria-85&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Viktoria-85/Kurs-pyton.git&quot;,\r\n    &quot;accountId&quot;: &quot;b0e73550-91ac-469f-8df4-96ef15dd9970&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 3\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"34vpjwzO3pUYfRkGtvyPgNxgJB0\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"Python.Address.executor\": \"Run\",\r\n    \"Python.Mailing.executor\": \"Run\",\r\n    \"Python.Task1.executor\": \"Run\",\r\n    \"Python.Task2.executor\": \"Run\",\r\n    \"Python.Task3.executor\": \"Run\",\r\n    \"Python.Task4.executor\": \"Run\",\r\n    \"Python.Task5.executor\": \"Run\",\r\n    \"Python.Task6.executor\": \"Run\",\r\n    \"Python.Task7.executor\": \"Run\",\r\n    \"Python.Task_1.executor\": \"Run\",\r\n    \"Python.Task_2.executor\": \"Run\",\r\n    \"Python.Task_3.executor\": \"Run\",\r\n    \"Python.Task_4.executor\": \"Run\",\r\n    \"Python.Task_5.executor\": \"Run\",\r\n    \"Python.lesson_03_task_1.executor\": \"Run\",\r\n    \"Python.lesson_1_task_1.executor\": \"Run\",\r\n    \"Python.lesson_1_task_2.executor\": \"Run\",\r\n    \"Python.lesson_1_task_3.executor\": \"Run\",\r\n    \"Python.lesson_1_task_4.executor\": \"Run\",\r\n    \"Python.lesson_1_task_5.executor\": \"Run\",\r\n    \"Python.lesson_3_task_2.executor\": \"Run\",\r\n    \"Python.lesson_3_task_3.executor\": \"Run\",\r\n    \"Python.smartphone.executor\": \"Run\",\r\n    \"Python.user.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"#3 on lesson3\",\r\n    \"last_opened_file_path\": \"C:/Users/viktu/Desktop/kurs pyton/Kurs-pyton\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-53e2683a6804-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.26094.141\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d7f7ca04-3908-4575-8e8d-3884f2f27774\" name=\"Changes\" comment=\"\" />\r\n      <created>1762104042194</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1762104042194</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"lesson1\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1762155608406</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1762155608406</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"lesson1\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1762186742560</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1762186742560</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"lesson2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1762550467825</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1762550467825</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"lesson2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1762709287035</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1762709287035</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"lesson3\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1763068197602</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1763068197602</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"lesson3\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1763311338467</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1763311338467</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"lesson3\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1763312010270</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1763312010270</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"lesson3\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1763313273150</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1763313273150</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"lesson3\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1763313449523</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1763313449523</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"lesson3\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1763313594510</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1763313594510</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"lesson3\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1763314194666</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1763314194666</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"12\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"lesson1\" />\r\n    <MESSAGE value=\"lesson2\" />\r\n    <MESSAGE value=\"lesson3\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"lesson3\" />\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a1d2a4a63b17ef8149441fcd69e16a899bd8773e)
++++ b/.idea/workspace.xml	(date 1764698838713)
+@@ -5,7 +5,9 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="d7f7ca04-3908-4575-8e8d-3884f2f27774" name="Changes" comment="lesson3">
++      <change afterPath="$PROJECT_DIR$/requirements.txt.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/lesson_03/lesson_3_task_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_03/lesson_3_task_2.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -80,7 +82,7 @@
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+     "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "#3 on lesson3",
++    "git-widget-placeholder": "lesson3",
+     "last_opened_file_path": "C:/Users/viktu/Desktop/kurs pyton/Kurs-pyton"
+   }
+ }]]></component>
+@@ -187,7 +189,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1763314194666</updated>
+     </task>
+-    <option name="localTasksCounter" value="12" />
++    <task id="LOCAL-00012" summary="lesson3">
++      <option name="closed" value="true" />
++      <created>1763315406439</created>
++      <option name="number" value="00012" />
++      <option name="presentableId" value="LOCAL-00012" />
++      <option name="project" value="LOCAL" />
++      <updated>1763315406439</updated>
++    </task>
++    <option name="localTasksCounter" value="13" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">

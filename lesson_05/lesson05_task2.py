@@ -27,3 +27,5 @@ except Exception as e:
 sleep(5)
 driver.quit()
 print("Браузер закрыт")
+
+

@@ -28,8 +28,12 @@ def test_calculator_button():
     button_equals = driver.find_element(By.XPATH, "//span[text()='=']")
     button_equals.click()
 
-    res = test_calculator_button(7, 8)
-    assert res == 15
+    WebDriverWait(driver, 46).until(
+    EC.text_to_be_present_in_element((By.CSS_SELECTOR, ".screen"), "15"))
+
+driver.quit()
+
+
 
 
 

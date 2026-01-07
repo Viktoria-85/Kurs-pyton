@@ -49,6 +49,10 @@ def test_shop_element():
     postal_code_field = driver.find_element(By.CSS_SELECTOR, "#postal-code")
     postal_code_field.send_keys("123456")
 
+    total_element = driver.find_element(By.CSS_SELECTOR, ".summary_total_label")
+    assert total_element.text == "Total: $58.29"
+
+
     driver.quit()
 
 

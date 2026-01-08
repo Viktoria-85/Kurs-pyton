@@ -12,9 +12,6 @@ driver.get("https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html 
 
 def test_calculator_button():
 
-    delay_input = driver.find_element(By.CSS_SELECTOR, "#delay")
-    delay_input.send_keys("45")
-
     button_7 = driver.find_element(By.XPATH, "//span[text()='7']")
     button_7.click()
 
@@ -24,14 +21,18 @@ def test_calculator_button():
     button_8 = driver.find_element(By.XPATH, "//span[text()='8']")
     button_8.click()
 
-
     button_equals = driver.find_element(By.XPATH, "//span[text()='=']")
     button_equals.click()
+
+    delay_input = driver.find_element(By.CSS_SELECTOR, "#delay")
+    delay_input.send_keys("45")
 
     WebDriverWait(driver, 46).until(
     EC.text_to_be_present_in_element((By.CSS_SELECTOR, ".screen"), "15"))
 
-driver.quit()
+
+
+    driver.quit()
 
 
 

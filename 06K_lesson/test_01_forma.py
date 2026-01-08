@@ -35,7 +35,7 @@ def test_forma_elements():
        phone_number.click()
 
        zip_code = driver.find_element(By.CSS_SELECTOR, "[name= 'zip-code']")
-       zip_code.send_keys()
+       zip_code.send_keys("")
        zip_code.click()
 
        city_name = driver.find_element(By.CSS_SELECTOR, "[name= 'city']")
@@ -59,14 +59,14 @@ def test_forma_elements():
 
        elements = driver.find_elements(By.CSS_SELECTOR, "[name= 'zip-code']")
        for element in elements:
-          assert '0, 128, 0' in element.value_of_css_property("background-color")
+          assert '255, 0, 0' in element.value_of_css_property("background-color")
 
 
-       elements = driver.find_elements(By.CSS_SELECTOR, "[name=first-name'],name= last-name],"
-               "[name= address], [name= 'e-mail'], [name= 'phone'], [name= 'city'],"
-               "[name= 'country'], [name= 'job-position'], [name= 'company']")
+       elements = driver.find_elements(By.CSS_SELECTOR, "[name='first-name'], [name='last-name'], "
+        "[name='address'], [name='e-mail'], [name='phone'], [name='city'], "
+        "[name='country'], [name='job-position'], [name='company']")
        for element in elements:
-          assert '255' in element.value_of_css_property("background-color")
+          assert '0, 128, 0 ' in element.value_of_css_property("background-color")
 
 
        driver.quit()

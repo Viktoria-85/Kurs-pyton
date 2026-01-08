@@ -80,8 +80,6 @@ def test_forma_elements():
         "[name='country'], [name='job-position'], [name='company']")
 
 
-
-
        for element in elements:
           assert '0, 128, 0 ' in element.value_of_css_property("background-color")
 

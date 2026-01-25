@@ -1,16 +1,20 @@
-
+from selenium import webdriver
+from selenium.webdriver.firefox.service import Service as FirefoxService
+from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.common.by import By
-from pages.shop import ShopPage
-from pages.login import LoginPage
-from pages.checkout import CheckoutPage
+
+from pages.shop_page import ShopPage
+from pages.login_page import LoginPage
+from pages.checkout_page import CheckoutPage
 
 
 def test_shop():
     driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
+    driver.get(" https://www.saucedemo.com/")
     page = ShopPage(driver)
-    page.click_button("#add-to-cart-sauce-labs-backpack")
-    page.click_button("#add-to-cart-sauce-labs-bolt-t-shirt")
-    page.click_button("#add-to-cart-sauce-labs-onesie")
+    page.click.button("#add-to-cart-sauce-labs-backpack")
+    page.click.button("#add-to-cart-sauce-labs-bolt-t-shirt")
+    page.click.button("#add-to-cart-sauce-labs-onesie")
     page = LoginPage(driver)
     page.input_password.send_keys("secret_sauce")
     page = CheckoutPage(driver)

@@ -24,5 +24,3 @@ def test_shop_click_button():
     assert checkout_page.get_total() == "Total: $58.29"
 
     driver.quit()
-
-

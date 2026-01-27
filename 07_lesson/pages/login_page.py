@@ -28,4 +28,3 @@ class LoginPage:
         button = self.driver.find_element(By.CSS_SELECTOR, "#login-button")
         button.click()
 
-

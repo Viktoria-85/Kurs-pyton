@@ -22,4 +22,3 @@ class ShopPage:
     def click_cart(self):
         button =self.driver.find_element(By.CSS_SELECTOR, "[data-test='shopping-cart-link']")
         button.click()
-

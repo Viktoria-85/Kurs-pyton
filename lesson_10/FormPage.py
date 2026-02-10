@@ -19,7 +19,7 @@ class FormPage:
         self.fields = {
             'first-name': "Хильда",
             'last-name': "Северная",
-            'address': "Сибирская, 55-3",
+            'address': "Сибирская, 25-5",
             'zip-code': "",
             'city': "Новокузнецк",
             'country': "Россия",
